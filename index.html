@@ -5,32 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Expense Tracker</title>
-    <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
     <form onsubmit="addNewExpense(event)">
-        <label for="expenseamount">Choose expenseamount:</label>
+        <label for="expenseamount">Choose expense amount:</label>
         <input type="number" name="expenseamount" required>
         <label for="description">Choose description:</label>
         <input type="text" name="description" required>
         <label for="category">Choose a category:</label>
         <select id="category" name="category">
-            <option value="fuel">fuel</option>
-            <option value="food">food</option>
-            <option value="electricity">electricity</option>
-            <option value="Movie">Movie</option>
+            <option value="fuel">Fuel</option>
+            <option value="food">Food</option>
+            <option value="electricity">Electricity</option>
+            <option value="movie">Movie</option>
         </select>
         <button class="btn btn-primary">Add Expense</button>
     </form>
     <div id="message"></div>
     <h1>Expenses</h1>
-    <ul id='listOfExpenses' class="list-group"></ul>
-    <!-- Bootstrap JS and Popper.js links -->
+    <ul id="listOfExpenses" class="list-group"></ul>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- Bootstrap JS link -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src='./index.js'></script>
+    <script src="./index.js"></script>
 </body>
 </html>
